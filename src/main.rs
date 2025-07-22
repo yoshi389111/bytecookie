@@ -30,16 +30,19 @@ fn get_embedded_cookies() -> Vec<ByteCookie> {
     let mut decoder = flate2::read::GzDecoder::new(BYTE_COOKIES_GZ);
     decoder
         .read_to_string(&mut json)
-        .expect("Failed to decode gzip");
-    serde_json::from_str(&json).expect("JSON parsing failed")
+        .expect("Failed to decode embedded gzip");
+    serde_json::from_str(&json).expect("Embedded JSON parsing failed")
 }
 
 /// Read message JSON from specified file
 fn get_cookies_from_file(file_path: &str) -> Vec<ByteCookie> {
-    let mut file = std::fs::File::open(file_path).expect("Failed to open file");
+    let mut file = std::fs::File::open(file_path)
+        .unwrap_or_else(|e| panic!("Failed to open file '{}': {}", file_path, e));
     let mut json = String::new();
-    file.read_to_string(&mut json).expect("Failed to read file");
-    serde_json::from_str(&json).expect("JSON parsing failed")
+    file.read_to_string(&mut json)
+        .unwrap_or_else(|e| panic!("Failed to read file '{}': {}", file_path, e));
+    serde_json::from_str(&json)
+        .unwrap_or_else(|e| panic!("JSON parsing failed for '{}': {}", file_path, e))
 }
 
 /// Decide random index for message
