@@ -6,7 +6,7 @@ bytecookie - A variation of the Fortune command for engineers
 
 ## SYNOPSIS
 
-`bytecookie` [OPTIONS]
+`bytecookie [OPTIONS]`
 
 ## DESCRIPTION
 
