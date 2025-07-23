@@ -1,10 +1,302 @@
 [
     {
+        "snippet": "100 Continue",
+        "message": "You're on the right track. Just keep going."
+    },
+    {
+        "snippet": "200 OK",
+        "message": "Everything is working as expected. Enjoy the moment."
+    },
+    {
+        "snippet": "201 Created",
+        "message": "Today is a good day to build something new."
+    },
+    {
+        "snippet": "202 Accepted",
+        "message": "You've been acknowledged. Processing... eventually."
+    },
+    {
+        "snippet": "204 No Content",
+        "message": "Silence can be meaningful too."
+    },
+    {
+        "snippet": "301 Moved Permanently",
+        "message": "A chapter in your life has closed. Embrace the new path."
+    },
+    {
+        "snippet": "302 Found",
+        "message": "The answer might lie elsewhere. Be flexible."
+    },
+    {
+        "snippet": "303 See Other",
+        "message": "Sometimes you need to take a detour to find the right path."
+    },
+    {
+        "snippet": "304 Not Modified",
+        "message": "No need to change. You're already enough today."
+    },
+    {
+        "snippet": "400 Bad Request",
+        "message": "Maybe it's time to rethink how you're asking."
+    },
+    {
+        "snippet": "401 Unauthorized",
+        "message": "Believe in your worth - and don't forget your credentials."
+    },
+    {
+        "snippet": "402 Payment Required",
+        "message": "Sometimes you need to invest in yourself."
+    },
+    {
+        "snippet": "403 Forbidden",
+        "message": "Just because you can see it, doesn't mean it's yours today."
+    },
+    {
         "snippet": "404 Not Found",
         "message": "Maybe today isn't the day to look for answers."
     },
     {
-        "snippet": "Segmentation fault",
-        "message": "Your brain just hit a memory boundary. Take a break."
+        "snippet": "405 Method Not Allowed",
+        "message": "Sometimes you need to try a different approach."
+    },
+    {
+        "snippet": "406 Not Acceptable",
+        "message": "Your standards are high, and that's okay."
+    },
+    {
+        "snippet": "418 I'm a teapot",
+        "message": "Don't take things too seriously. Be playful."
+    },
+    {
+        "snippet": "429 Too Many Requests",
+        "message": "Slow down. The universe needs time to catch up."
+    },
+    {
+        "snippet": "500 Internal Server Error",
+        "message": "Not everything is your fault. Some bugs live deeper."
+    },
+    {
+        "snippet": "502 Bad Gateway",
+        "message": "Sometimes, even your sources can be unreliable."
+    },
+    {
+        "snippet": "503 Service Unavailable",
+        "message": "It's okay to take a break. Reboot and return stronger."
+    },
+    {
+        "snippet": "504 Gateway Timeout",
+        "message": "Some things just take longer. Patience is your ally."
+    },
+    {
+        "snippet": "while(1) { doSomething(); }",
+        "message": "Even an infinite loop deserves a break."
+    },
+    {
+        "snippet": "while (true) { /* keep going */ }",
+        "message": "Endless effort doesn't always mean progress."
+    },
+    {
+        "snippet": "break;",
+        "message": "Sometimes, the best move is to walk away."
+    },
+    {
+        "snippet": "for (;;);",
+        "message": "You may feel stuck, but maybe you're just in a very long loop."
+    },
+    {
+        "snippet": "// TODO:",
+        "message": "The future is full of promises... and debt."
+    },
+    {
+        "snippet": "// FIXME: this shouldn't happen",
+        "message": "Acknowledging the problem is the first step. The second is... someday."
+    },
+    {
+        "snippet": "// HACK: works for now",
+        "message": "Shortcuts often lead to scenic detours later."
+    },
+    {
+        "snippet": "// TODO: make this better",
+        "message": "Improvement starts with intent - and a deadline."
+    },
+    {
+        "snippet": "// NOTE: this is important",
+        "message": "Don't forget why you started."
+    },
+    {
+        "snippet": "// magic number",
+        "message": "Some mysteries are better documented."
+    },
+    {
+        "snippet": "deep_thought() { env sleep 2.3652e14; echo 42; }",
+        "message": "Great ideas take time - and sometimes a nap."
+    },
+    {
+        "snippet": "int foo = 42;",
+        "message": "You may not know the question, but the answer feels right."
+    },
+    {
+        "snippet": "bool success = false;",
+        "message": "Every false has the potential to flip."
+    },
+    {
+        "snippet": "var result = null;",
+        "message": "Sometimes, you just haven't gotten your answer yet."
+    },
+    {
+        "snippet": "throw new Error(\"Something went wrong\");",
+        "message": "It's okay to break - just catch yourself after."
+    },
+    {
+        "snippet": "try { ... } catch (e) {}",
+        "message": "You're ready to handle whatever comes... or ignore it completely."
+    },
+    {
+        "snippet": "rm -rf /",
+        "message": "Sometimes you need to let go... but maybe not everything."
+    },
+    {
+        "snippet": "cd ..",
+        "message": "Sometimes, the only way forward is to step back."
+    },
+    {
+        "snippet": "git checkout -b new-feature",
+        "message": "New branches are where the magic happens."
+    },
+    {
+        "snippet": "ls -a",
+        "message": "Look closely. Even the hidden things matter."
+    },
+    {
+        "snippet": "cat file | grep \"hope\"",
+        "message": "You'll always find what you're looking for - if you know how to search."
+    },
+    {
+        "snippet": "exit 0",
+        "message": "A clean end is a beautiful thing."
+    },
+    {
+        "snippet": "sudo !!",
+        "message": "You knew better. But not soon enough."
+    },
+    {
+        "snippet": "git commit -m \"fix\"",
+        "message": "A quick fix today might haunt you tomorrow."
+    },
+    {
+        "snippet": "git reset --hard",
+        "message": "Clean slates are powerful - and dangerous."
+    },
+    {
+        "snippet": "git commit -m \"final final v2 REALLY final\"",
+        "message": "Some things are never truly finished."
+    },
+    {
+        "snippet": "NullPointerException",
+        "message": "Maybe what you trusted... wasn't really there."
+    },
+    {
+        "snippet": "syntax error near unexpected token",
+        "message": "Even the smallest misstep can derail the best intentions."
+    },
+    {
+        "snippet": "undefined reference to 'main'",
+        "message": "Without purpose, nothing begins."
+    },
+    {
+        "snippet": "IndexError: list index out of range",
+        "message": "You reached too far. Perhaps it's time to reconsider your boundaries."
+    },
+    {
+        "snippet": "TypeError: unsupported operand type(s)",
+        "message": "You can't always combine the things you want to."
+    },
+    {
+        "snippet": "Permission denied",
+        "message": "Some doors won't open - not yet."
+    },
+    {
+        "snippet": "Connection refused",
+        "message": "Not everyone is ready to connect. Try again later."
+    },
+    {
+        "snippet": "Network is unreachable",
+        "message": "You might be looking too far. Start closer to home."
+    },
+    {
+        "snippet": "OutOfMemoryError",
+        "message": "You've been thinking too much. Time to rest."
+    },
+    {
+        "snippet": "panic: unexpected error",
+        "message": "Even the best of us lose control sometimes."
+    },
+    {
+        "snippet": "fatal: not a git repository",
+        "message": "You might be in the wrong place... or not initialized yet."
+    },
+    {
+        "snippet": "\"It works on my machine\"",
+        "message": "Your reality is not universal."
+    },
+    {
+        "snippet": "\"Try turning it off and on again.\"",
+        "message": "Sometimes, a reset is all you really need."
+    },
+    {
+        "snippet": "EPERM(1) - Operation not permitted",
+        "message": "You might need to level up before proceeding."
+    },
+    {
+        "snippet": "ENOENT(2) - No such file or directory",
+        "message": "Sometimes, you just need to create your own path."
+    },
+    {
+        "snippet": "ESRCH(3) - No such process",
+        "message": "Stop chasing ghosts."
+    },
+    {
+        "snippet": "EINTR(4) - Interrupted system call",
+        "message": "Sometimes, you just need to take a break."
+    },
+    {
+        "snippet": "EIO(5) - I/O error",
+        "message": "Not everything that fails is your fault."
+    },
+    {
+        "snippet": "ENXIO(6) - No such device or address",
+        "message": "Maybe you're knocking on the wrong door."
+    },
+    {
+        "snippet": "E2BIG(7) - Argument list too long",
+        "message": "Keep it simple. Even the kernel thinks so."
+    },
+    {
+        "snippet": "EAGAIN(11) - Try again",
+        "message": "Patience is part of progress."
+    },
+    {
+        "snippet": "ENOMEM(12) - Out of memory",
+        "message": "You've been thinking too much. Time to rest."
+    },
+    {
+        "snippet": "EACCES(13) - Permission denied",
+        "message": "It's not always the right time - or the right key."
+    },
+    {
+        "snippet": "ENOSPC(28) - No space left on device",
+        "message": "You may need to let go before you can move on."
+    },
+    {
+        "snippet": "EINVAL(22) - Invalid argument",
+        "message": "What makes sense to you might not compute elsewhere."
+    },
+    {
+        "snippet": "Bus error (core dumped)",
+        "message": "You got hit by something big. Recovery takes time."
+    },
+    {
+        "snippet": "Segmentation fault (core dumped)",
+        "message": "Something deep inside needs attention."
     }
 ]
