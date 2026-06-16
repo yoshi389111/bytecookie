@@ -1,5 +1,13 @@
-use clap::Parser;
+use clap::{Parser, ValueEnum};
 use std::io::Read;
+
+/// Color mode for output
+#[derive(Clone, Debug, ValueEnum)]
+enum ColorMode {
+    Auto,
+    Always,
+    Never,
+}
 
 /// Command line arguments
 #[derive(Debug, Parser)]
@@ -12,6 +20,10 @@ struct Args {
     /// Message JSON file path
     #[arg(short, long, env = "BYTE_COOKIES_JSON", hide_env_values = true, default_value = None)]
     json: Option<String>,
+
+    /// Color mode (auto, always, never)
+    #[arg(short, long, value_enum, default_value = "auto")]
+    color: ColorMode,
 }
 
 /// Structure for one message in the JSON
@@ -59,27 +71,46 @@ fn decide_todays_index(count: usize, today: &str, user: &str) -> usize {
     context.consume(today.as_bytes());
     let digest = context.finalize();
     let num = u32::from_be_bytes(digest.0[0..4].try_into().unwrap());
-    (num as usize) % count
+    (num % count as u32) as usize
+}
+
+/// Determine if we should use color based on the argument and environment
+fn is_color_enabled(color_arg: &ColorMode) -> bool {
+    use std::io::IsTerminal;
+
+    let no_color = std::env::var_os("NO_COLOR").is_some();
+    let is_tty = std::io::stdout().is_terminal();
+    match color_arg {
+        ColorMode::Auto => is_tty && !no_color,
+        ColorMode::Always => true,
+        ColorMode::Never => false,
+    }
 }
 
 /// Show fortune message for engineers
 fn main() {
     let args = Args::parse();
 
-    let byte_cookies = if let Some(file_path) = args.json {
+    let cookies = if let Some(file_path) = args.json {
         get_cookies_from_file(&file_path)
     } else {
         get_embedded_cookies()
     };
 
-    let index = if let Some(user) = args.user {
+    let cookie_index = if let Some(user) = args.user {
         let today = chrono::Local::now().format("%Y-%m-%d").to_string();
-        decide_todays_index(byte_cookies.len(), &today, &user)
+        decide_todays_index(cookies.len(), &today, &user)
     } else {
-        decide_random_index(byte_cookies.len())
+        decide_random_index(cookies.len())
     };
 
-    let cookie = &byte_cookies[index];
-    println!("{}", cookie.snippet);
-    println!("{}", cookie.message);
+    let cookie = &cookies[cookie_index];
+
+    let (cyan, yellow, reset) = if is_color_enabled(&args.color) {
+        ("\x1b[36m", "\x1b[33m", "\x1b[0m")
+    } else {
+        ("", "", "")
+    };
+    println!("{}{}{}", cyan, cookie.snippet, reset);
+    println!("{}{}{}", yellow, cookie.message, reset);
 }

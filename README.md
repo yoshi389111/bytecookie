@@ -2,7 +2,7 @@
 
 ## NAME
 
-bytecookie - A variation of the Fortune command for engineers
+bytecookie - display engineer-themed fortune messages
 
 ## SYNOPSIS
 
@@ -10,22 +10,33 @@ bytecookie - A variation of the Fortune command for engineers
 
 ## DESCRIPTION
 
-`bytecookie` is a command-line tool that displays a random or daily "fortune" message for engineers, inspired by HTTP status codes, programming idioms, and error messages. Messages are designed to be motivational, humorous, or thought-provoking for developers.
+`bytecookie` displays random fortune messages for engineers, inspired by HTTP status codes, programming idioms, error messages, and developer culture.
 
-Messages are selected either randomly or deterministically based on the current date and an optional user name, ensuring a unique "fortune" for each user per day.
+When a username is specified, a deterministic message is selected based on the current date and username.
+
+Small bytes. Small bites. Small pieces of wisdom.
 
 ## OPTIONS
 
 - `-u`, `--user <USER>`
-  - Specify a user name to receive a daily fortune message. The same user will get the same message throughout the day.
+  - Specify a username to get the same message throughout the day.
 
 - `-j`, `--json <PATH>`
-  - Specify a custom JSON file containing fortune messages. If not provided, embedded messages are used.
+  - Load fortune messages from the specified JSON file. If not provided, embedded messages are used.
+
+- `-c`, `--color <WHEN>`
+  - Control colored output. Options are:
+    - `auto` (default): Enable color if output is a terminal.
+    - `always`: Always enable color.
+    - `never`: Never enable color.
 
 ## ENVIRONMENT
 
 - `BYTE_COOKIES_JSON`  
   Path to a custom message JSON file. Used if the `--json` option is not specified.
+
+- `NO_COLOR`  
+  If set, disables colored output. See [NO_COLOR](https://no-color.org/) for more details.
 
 ## EXAMPLES
 
@@ -39,10 +50,6 @@ bytecookie --user alice@example.com
 # Use a custom message file
 bytecookie --json ./mycookies.json
 ```
-
-## FILE
-
-- Custom message file (JSON format, see `assets/bytecookies.json` for example)
 
 ## SEE ALSO
 
