@@ -63,15 +63,20 @@ fn decide_random_index(count: usize) -> usize {
     rand::Rng::random_range(&mut rng, 0..count)
 }
 
-/// Decide message index from today's date and user name
+/// Decide a message index from today's date and username
 fn decide_todays_index(count: usize, today: &str, user: &str) -> usize {
+    assert!(count > 0);
+
     let mut context = md5::Context::new();
     context.consume(user.as_bytes());
     context.consume(b":");
     context.consume(today.as_bytes());
+
     let digest = context.finalize();
     let num = u32::from_be_bytes(digest.0[0..4].try_into().unwrap());
-    (num % count as u32) as usize
+
+    let count = u32::try_from(count).unwrap();
+    (num % count) as usize
 }
 
 /// Determine if we should use color based on the argument and environment
