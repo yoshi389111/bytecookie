@@ -36,7 +36,7 @@ Small bytes. Small bites. Small pieces of wisdom.
   Path to a custom message JSON file. Used if the `--json` option is not specified.
 
 - `NO_COLOR`  
-  If set, disables colored output. See [NO_COLOR](https://no-color.org/) for more details.
+  If set, disables colored output unless overridden by command-line options. See [NO_COLOR](https://no-color.org/) for more details.
 
 ## EXAMPLES
 
