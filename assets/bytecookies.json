@@ -9,7 +9,7 @@
     },
     {
         "snippet": "201 Created",
-        "message": "Today is a good day to build something new."
+        "message": "Something new has entered the world. Handle with care."
     },
     {
         "snippet": "202 Accepted",
@@ -33,7 +33,7 @@
     },
     {
         "snippet": "304 Not Modified",
-        "message": "No need to change. You're already enough today."
+        "message": "No changes detected. Maybe that's okay."
     },
     {
         "snippet": "400 Bad Request",
@@ -41,15 +41,15 @@
     },
     {
         "snippet": "401 Unauthorized",
-        "message": "Believe in your worth - and don't forget your credentials."
+        "message": "Believe in yourself - but don't forget your credentials."
     },
     {
         "snippet": "402 Payment Required",
-        "message": "Sometimes you need to invest in yourself."
+        "message": "Not everything valuable is free."
     },
     {
         "snippet": "403 Forbidden",
-        "message": "Just because you can see it, doesn't mean it's yours today."
+        "message": "Just because you can see it doesn't mean it's yours today."
     },
     {
         "snippet": "404 Not Found",
@@ -57,11 +57,11 @@
     },
     {
         "snippet": "405 Method Not Allowed",
-        "message": "Sometimes you need to try a different approach."
+        "message": "The goal may be right. The method isn't."
     },
     {
         "snippet": "406 Not Acceptable",
-        "message": "Your standards are high, and that's okay."
+        "message": "Not every compromise is worth making."
     },
     {
         "snippet": "418 I'm a teapot",
@@ -85,10 +85,10 @@
     },
     {
         "snippet": "504 Gateway Timeout",
-        "message": "Some things just take longer. Patience is your ally."
+        "message": "Waiting is also a kind of process."
     },
     {
-        "snippet": "while(1) { doSomething(); }",
+        "snippet": "while (1) { doSomething(); }",
         "message": "Even an infinite loop deserves a break."
     },
     {
@@ -137,7 +137,7 @@
     },
     {
         "snippet": "bool success = false;",
-        "message": "Every false has the potential to flip."
+        "message": "Every false has the potential to become true."
     },
     {
         "snippet": "var result = null;",
@@ -169,7 +169,7 @@
     },
     {
         "snippet": "cat file | grep \"hope\"",
-        "message": "You'll always find what you're looking for - if you know how to search."
+        "message": "Sometimes the answer is already in the logs."
     },
     {
         "snippet": "exit 0",
@@ -192,12 +192,20 @@
         "message": "Some things are never truly finished."
     },
     {
+        "snippet": "<<<<<<< HEAD",
+        "message": "Some conflicts cannot be resolved automatically."
+    },
+    {
         "snippet": "NullPointerException",
         "message": "Maybe what you trusted... wasn't really there."
     },
     {
         "snippet": "syntax error near unexpected token",
         "message": "Even the smallest misstep can derail the best intentions."
+    },
+    {
+        "snippet": "warning: unused variable",
+        "message": "Not everything you carry is necessary."
     },
     {
         "snippet": "undefined reference to 'main'",
@@ -225,11 +233,11 @@
     },
     {
         "snippet": "OutOfMemoryError",
-        "message": "Sometimes, pushing past your limits leads to new inspiration."
+        "message": "Even the biggest dreams need more memory."
     },
     {
         "snippet": "panic: unexpected error",
-        "message": "Even the best of us lose control sometimes."
+        "message": "Even the strongest systems panic sometimes."
     },
     {
         "snippet": "fatal: not a git repository",
@@ -244,51 +252,51 @@
         "message": "Sometimes, a reset is all you really need."
     },
     {
-        "snippet": "EPERM(1) - Operation not permitted",
+        "snippet": "EPERM (errno 1): Operation not permitted",
         "message": "You might need to level up before proceeding."
     },
     {
-        "snippet": "ENOENT(2) - No such file or directory",
+        "snippet": "ENOENT (errno 2): No such file or directory",
         "message": "Sometimes, you just need to create your own path."
     },
     {
-        "snippet": "ESRCH(3) - No such process",
+        "snippet": "ESRCH (errno 3): No such process",
         "message": "Stop chasing ghosts."
     },
     {
-        "snippet": "EINTR(4) - Interrupted system call",
+        "snippet": "EINTR (errno 4): Interrupted system call",
         "message": "Sometimes, you just need to take a break."
     },
     {
-        "snippet": "EIO(5) - I/O error",
+        "snippet": "EIO (errno 5): I/O error",
         "message": "Not everything that fails is your fault."
     },
     {
-        "snippet": "ENXIO(6) - No such device or address",
+        "snippet": "ENXIO (errno 6): No such device or address",
         "message": "Maybe you're knocking on the wrong door."
     },
     {
-        "snippet": "E2BIG(7) - Argument list too long",
+        "snippet": "E2BIG (errno 7): Argument list too long",
         "message": "Keep it simple. Even the kernel thinks so."
     },
     {
-        "snippet": "EAGAIN(11) - Try again",
+        "snippet": "EAGAIN (errno 11): Try again",
         "message": "Patience is part of progress."
     },
     {
-        "snippet": "ENOMEM(12) - Out of memory",
+        "snippet": "ENOMEM (errno 12): Out of memory",
         "message": "You've been thinking too much. Time to rest."
     },
     {
-        "snippet": "EACCES(13) - Permission denied",
+        "snippet": "EACCES (errno 13): Permission denied",
         "message": "It's not always the right time - or the right key."
     },
     {
-        "snippet": "ENOSPC(28) - No space left on device",
+        "snippet": "ENOSPC (errno 28): No space left on device",
         "message": "You may need to let go before you can move on."
     },
     {
-        "snippet": "EINVAL(22) - Invalid argument",
+        "snippet": "EINVAL (errno 22): Invalid argument",
         "message": "What makes sense to you might not compute elsewhere."
     },
     {
