@@ -1,7 +1,7 @@
 [
     {
         "snippet": "100 Continue",
-        "message": "You're on the right track. Just keep going."
+        "message": "You're on the right track. Keep going."
     },
     {
         "snippet": "200 OK",
@@ -21,7 +21,7 @@
     },
     {
         "snippet": "301 Moved Permanently",
-        "message": "A chapter in your life has closed. Embrace the new path."
+        "message": "The old path is gone. Embrace the new one."
     },
     {
         "snippet": "302 Found",
@@ -29,7 +29,7 @@
     },
     {
         "snippet": "303 See Other",
-        "message": "Sometimes you need to take a detour to find the right path."
+        "message": "The right path may be elsewhere."
     },
     {
         "snippet": "304 Not Modified",
@@ -41,7 +41,7 @@
     },
     {
         "snippet": "401 Unauthorized",
-        "message": "Believe in yourself - but don't forget your credentials."
+        "message": "Trust yourself. Authenticate anyway."
     },
     {
         "snippet": "402 Payment Required",
@@ -49,7 +49,7 @@
     },
     {
         "snippet": "403 Forbidden",
-        "message": "Just because you can see it doesn't mean it's yours today."
+        "message": "Seeing it doesn't make it yours."
     },
     {
         "snippet": "404 Not Found",
@@ -69,7 +69,7 @@
     },
     {
         "snippet": "429 Too Many Requests",
-        "message": "Slow down. The universe needs time to catch up."
+        "message": "Slow down. Even the universe has rate limits."
     },
     {
         "snippet": "500 Internal Server Error",
@@ -101,7 +101,7 @@
     },
     {
         "snippet": "for (;;);",
-        "message": "You may feel stuck, but maybe you're just in a very long loop."
+        "message": "You are not stuck. You're looping."
     },
     {
         "snippet": "// TODO:",
@@ -109,7 +109,7 @@
     },
     {
         "snippet": "// FIXME: this shouldn't happen",
-        "message": "Acknowledging the problem is the first step. The second is... someday."
+        "message": "The first step is knowing. The second is... someday."
     },
     {
         "snippet": "// HACK: works for now",
@@ -133,7 +133,7 @@
     },
     {
         "snippet": "int foo = 42;",
-        "message": "You may not know the question, but the answer feels right."
+        "message": "Some answers come before the questions."
     },
     {
         "snippet": "bool success = false;",
@@ -149,11 +149,11 @@
     },
     {
         "snippet": "try { ... } catch (e) {}",
-        "message": "You're ready to handle whatever comes... or ignore it completely."
+        "message": "Ready for anything. Or ignoring everything."
     },
     {
         "snippet": "rm -rf /",
-        "message": "Sometimes you need to let go... but maybe not everything."
+        "message": "Let go... but not everything."
     },
     {
         "snippet": "cd ..",
@@ -201,7 +201,7 @@
     },
     {
         "snippet": "syntax error near unexpected token",
-        "message": "Even the smallest misstep can derail the best intentions."
+        "message": "One misplaced character can break everything."
     },
     {
         "snippet": "warning: unused variable",
@@ -213,7 +213,7 @@
     },
     {
         "snippet": "IndexError: list index out of range",
-        "message": "You reached too far. Perhaps it's time to reconsider your boundaries."
+        "message": "You reached too far. Know your boundaries."
     },
     {
         "snippet": "TypeError: unsupported operand type(s)",

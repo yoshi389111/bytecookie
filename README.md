@@ -51,6 +51,43 @@ bytecookie --user alice@example.com
 bytecookie --json ./mycookies.json
 ```
 
+## SAMPLE OUTPUT
+
+```txt
+202 Accepted
+You've been acknowledged. Processing... eventually.
+```
+
+```txt
+418 I'm a teapot
+Don't take things too seriously. Be playful.
+```
+
+```txt
+sudo !!
+You knew better. But not soon enough.
+```
+
+```txt
+git commit -m "final final v2 REALLY final"
+Some things are never truly finished.
+```
+
+```txt
+"It works on my machine"
+Your reality is not universal.
+```
+
+```txt
+// HACK: works for now
+Shortcuts often lead to scenic detours later.
+```
+
+```txt
+fatal: not a git repository
+You might be in the wrong place... or not initialized yet.
+```
+
 ## SEE ALSO
 
 fortune(6), cowsay(1)
