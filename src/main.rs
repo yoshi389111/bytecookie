@@ -47,6 +47,10 @@ fn main() -> anyhow::Result<()> {
         get_embedded_cookies()?
     };
 
+    if cookies.is_empty() {
+        return Err(anyhow::anyhow!("No fortune messages available (cookie list is empty)"));
+    }
+
     let cookie_index = if let Some(user) = args.user {
         let today = chrono::Local::now().format("%Y-%m-%d").to_string();
         decide_todays_index(cookies.len(), &today, &user)?
