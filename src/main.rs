@@ -48,7 +48,9 @@ fn main() -> anyhow::Result<()> {
     };
 
     if cookies.is_empty() {
-        return Err(anyhow::anyhow!("No fortune messages available (cookie list is empty)"));
+        return Err(anyhow::anyhow!(
+            "No fortune messages available (cookie list is empty)"
+        ));
     }
 
     let cookie_index = if let Some(user) = args.user {
